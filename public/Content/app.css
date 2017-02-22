@@ -1,0 +1,219 @@
+/*custom css*/ 
+
+/*
+* ==== References ===
+ ** -- https://css-tricks.com -- **
+ ** --  http://getbootstrap.com/css/ -- **
+ ** -- http://www.w3schools.com -- **
+ ** -- http://stackoverflow.com -- **
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+.navbar{
+  opacity: 0.8}
+body{
+
+  color: white;
+  font-family: Abril Fatface, cursive;
+}
+/*
+* — Home page Section Heading —
+*/
+.row1{
+  min-height:100vh;
+  background: #242121;
+  padding-top: 100px;
+ 
+}
+#paraHome{
+  font-size: 24px;
+  padding-top: 100px;
+  text-indent: 0.5em;
+  animation: fadeIn 2s ease-in-out 0s forwards; }
+  #homeHeader{
+ font-family: Abril Fatface, cursive;
+ text-decoration: underline;
+ text-align: center;
+
+}
+#loading{
+position: absolute;
+left: 350px;
+top: 216px;
+
+}
+
+.et{
+
+  border-right:1px solid grey;
+  opacity: 0;
+  animation: fadeOut 1s ease-out 0s forwards;
+
+}
+@keyframes fadeOut{
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
+
+.et:hover{
+animation: fadeIn 2s ease-in-out 0s forwards;
+
+}
+@keyframes fadeIn{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+#emerging{
+font-size: 480%;  
+position: absolute;
+transform:rotate(270deg);
+padding-right: 480px;
+
+}
+
+#tech{
+  font-size: 480%;
+  position: absolute;
+transform:rotate(-270deg);
+padding-bottom: 600px;
+
+}
+hr{
+  color: gray;
+}
+
+.banner{  
+  margin-left: 100px;
+  padding-left: 850px; 
+}
+#homeBanner{
+  text-align: center;
+
+
+}
+.banner li:hover{
+background-color: black;
+opacity: 0.9;
+
+}
+
+#spinner{
+  color: white;
+}
+.active a:hover{
+  background-color: black;
+  color: white; 
+}
+  /*
+* — About Section —
+*/
+#about{
+ 
+min-height: 100vh;
+  background: #76323F;
+  
+}
+#avatar{
+  position: absolute;
+  padding-top: 150px;
+  padding-left: 150px;
+  border-radius: 50%;
+}
+.details{
+  padding-top: 550px;
+  padding-left:200px;
+}
+
+#AboutHeader{
+  text-align: center;
+  padding-top: 100px;
+}
+.content{
+  text-align: center;
+  padding-top: 150px;
+}
+.progress{
+  width: 400px;
+}
+/*
+* — project Section Heading —
+*/
+#project{
+  min-height: 100vh;
+  background: #428f89;
+
+}
+.row3{
+ padding-top: 10px;
+ padding-left: 25px;
+}
+.thumbnail{
+  background-color: #dddad6;
+  width: 300px;
+  height: 400px;
+  box-shadow: 10px 10px 5px #242121;
+}
+.thumbnail:hover{
+  position: relative;
+    -webkit-transition: all 200ms ease-in;
+       -webkit-transform: scale(1.5); 
+  transition: all 200ms ease-in;
+    transform: scale(1.2);   
+}
+#pay{
+  width: 230px;
+  height: 200px;
+}
+/*
+* — service Section Heading —
+*/
+#service{
+min-height: 100vh;
+background:#a54e36;
+}
+#service{
+  padding-left: 200px;
+ 
+}
+#web{
+ position: relative;
+ left:25px;
+  text-align: center;
+  
+}
+#test{
+position: relative;
+top: 50px;
+right:55px;
+text-align: center;
+  transform: scale(1.1);
+  
+} 
+
+/*
+* — Contact Section Heading —
+*/
+#contact{
+min-height: 100vh;
+
+background:#133831;
+}
+form{
+  margin-right: 200px;
+  padding-left: 200px;
+}
+#contact{
+  padding-top: 50px;
+  text-align: center;
+}
+.social:hover {
+     -webkit-transform: scale(1.1);
+    
+ }
+ .social {
+     -webkit-transform: scale(0.8); 
+     -webkit-transition-duration: 0.5s;
+ }
+

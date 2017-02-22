@@ -1,0 +1,69 @@
+
+
+<!--header -->
+<% include partials/header.ejs %>
+
+<!--Contact ME Page -->
+   <div id="contact">
+   
+   <h2 id="AboutHeader"><%= title %></h2>
+   <br><br>
+   <form class="form-horizontal" action="mailto:mekhaleganesh@gmail.com" method="post" enctype="text/plain">
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Full Name </label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Enter your name" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Subject</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Enter your Subject" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">E-mail</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Enter your email id" class="form-control input-md">
+    
+  </div>
+</div>
+
+
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">Message</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" placeholder="Enter your message" id="textarea" name="textarea"></textarea>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit"<a href="mailto:mekhaleganesh@gmail.com"></a>submit</button>
+  </div>
+</div>
+</form>
+<br>
+
+<!--icons for social websites -->
+<div class="social">
+                    <a href="https://www.facebook.com/mekhaleganesh"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	            <a href="https://twitter.com/mekhalganesh"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+	            <a href="https://plus.google.com/u/0/108268270952412527820"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+</div>
+   </div>       
+
+   
+        <!-- footer-->
+<% include partials/footer.ejs %>
