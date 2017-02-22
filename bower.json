@@ -1,12 +1,12 @@
 {
-  "name": "assignment1",
+  "name": "assignment2",
   "description": "express portfolio",
   "main": "server.js",
   "authors": [
     "mekhal ganesh"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/mekhaleganesh/assignment2-comp308",
   "ignore": [
     "**/.*",
     "node_modules",
