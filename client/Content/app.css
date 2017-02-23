@@ -31,6 +31,7 @@ body{
   padding-top: 100px;
   text-indent: 0.5em;
   animation: fadeIn 2s ease-in-out 0s forwards; }
+  
   #homeHeader{
  font-family: Abril Fatface, cursive;
  text-decoration: underline;
@@ -201,15 +202,15 @@ min-height: 100vh;
 background:#133831;
 }
 form{
-  margin-right: 200px;
-  padding-left: 200px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 #contact{
-  padding-top: 50px;
+  padding-top: 5px;
   text-align: center;
 }
 .social:hover {
-     -webkit-transform: scale(1.1);
+     -webkit-transform: scale(1.0);
     
  }
  .social {
@@ -217,3 +218,18 @@ form{
      -webkit-transition-duration: 0.5s;
  }
 
+.loginPage{
+  padding-top: 100px;
+  color: black;
+
+}
+
+.registerPage{
+padding-top: 100px;
+  color: black;
+
+}
+.PageRegister{
+min-height: 100vh;
+  background-color: #a33b36;
+}
