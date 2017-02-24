@@ -17,22 +17,33 @@
   </head>
   <body>
   <!--this makes the website fit to teh screen and make it fluid. -->
-  <nav class = " navbar navbar-default navbar-fixed-top">
+  <nav class = " navbar navbar-right navbar-default navbar-fixed-top ">
    <div class = "container-fluid">
   <!-- logo section of the page -->
    <div class =" navbar-header">
-<a href="#" class="navbar-brand">COMP308</a>
+   <% if(typeof displayName == 'string' && displayName) { %>
+ 
+<a href="#" class="navbar-brand">Hi,<%= displayName %></a>
+<% } else { %>
+<a href="#" class="navbar-brand">COMP 308  </a>
+<% } %>
 </div>
 
 <div class="banner">
 <ul class="nav navbar-nav">     <!--navigation section of the page -->
-<% if (title==)
+
 <li class="active"><a href="/">Home</a></li>
 <li><a href = "/about"> About Me</a></li>
 <li><a href = "/projects"> Projects</a></li>
 <li><a href = "/service"> Services</a></li>
 <li><a href = "/contact"> Contact Me</a></li>
-<li><a href = "/login"> Login</a></li>
+<% if(typeof displayName == 'string' && displayName) { %>
+<li><a href = "/contacts"><i class = "fa fa-address-book"></i> Contact Book</a></li>
+<li><a href = "/logout"><i class = "fa fa-sign-out"></i> Log Out</a></li>
+
+<% } else { %>
+<li><a href = "/login"><i class = "fa fa-sign-in"></i> Login</a></li>
+<% } %>
 </ul>
 </div>
 </div>

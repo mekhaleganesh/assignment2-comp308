@@ -87,7 +87,7 @@ hr{
 
 .banner{  
   margin-left: 100px;
-  padding-left: 850px; 
+ padding-left: 600px; 
 }
 #homeBanner{
   text-align: center;
@@ -221,6 +221,8 @@ form{
 .loginPage{
   padding-top: 100px;
   color: black;
+  background-color: #246146;
+  min-height: 100vh;
 
 }
 
@@ -232,4 +234,20 @@ padding-top: 100px;
 .PageRegister{
 min-height: 100vh;
   background-color: #a33b36;
+}
+.viewPage{
+  color: black;  
+  padding-top: 50px;
+  background-color:#af513e;
+  min-height: 100vh;
+}
+.contactDetailpage{
+  color:black;
+  background-color: #18343b;
+  min-height: 100vh;
+    padding-top: 100px;
+}
+.container{
+  width : 100%;
+  margin-right: 100px;
 }

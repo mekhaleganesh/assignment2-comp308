@@ -1,11 +1,11 @@
 
 <% include ../partials/header.ejs %>
-
+ <div class="loginPage">
 <main class="container">
      <% if (messages.length > 0) { %>
         <div class="alert alert-danger"><%= messages %></div>
       <% } %>
-      <div class="loginPage">
+      <div class="loginpage">
         <div class="col-xs-12 col-md-8">
            <h1>Please Login</h1>
            <form method="post">
@@ -26,6 +26,7 @@
                </fieldset>
             </form>
          </div>
+      </div>
       </div>
     </main>
 

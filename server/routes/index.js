@@ -53,7 +53,7 @@ router.get('/contact',(req, res, next)=> {
 
 
 
-a
+
 //===== Login page ===//
 
 /* GET /login - render the login view */
@@ -63,7 +63,7 @@ router.get('/login', (req, res, next) => {
     // render the login page
     res.render('auth/login', {
       title: 'Login',
-      games: '',
+      contacts: '',
       messages: req.flash('loginMessage'),
       displayName: req.user ? req.user.displayName : ''
     });
@@ -75,7 +75,7 @@ router.get('/login', (req, res, next) => {
 
 // POST /login - process the login page
 router.post('/login', passport.authenticate('local', {
-  successRedirect: '/contact',
+  successRedirect: '/contacts',
   failureRedirect: '/login',
   failureFlash: true
 }));
@@ -90,7 +90,7 @@ router.get('/register', (req, res, next) =>{
     // render the registration page
     res.render('auth/register', {
       title: 'Register',
-      games: '',
+      contacts: '',
       messages: req.flash('registerMessage'),
       displayName: req.user ? req.user.displayName : ''
     });

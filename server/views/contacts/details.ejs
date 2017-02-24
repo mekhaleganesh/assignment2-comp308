@@ -1,29 +1,38 @@
 <% include ../partials/header.ejs %>
 
-    <!-- MAIN CONTENT -->
+    
+     <div class="contactDetailpage">
+     <!-- MAIN CONTENT -->
     <div class="container">
-      <div class="contactDetailpage">
+     
         <div class="col-md-offset-3 col-md-6">
           <h1><%= title %></h1>
             <form class="form" method="post">
               <div class="form-group">
                 <label for="NameTextField">Name</label>
                 <input type="text" class="form-control" id="NameTextField"
-                placeholder="Full Name" name="name" value="<%= contacts.name %>" required>
+                placeholder="Enter Full Name" name="name" value="<%= contacts.name %>" required>
               </div>
               <div class="form-group">
                 <label for="numberTextField">Number</label>
                 <input type="text" class="form-control" id="numberTextField"
-                placeholder="Game Cost" name="cost" value="<%= contacts.cost %>"  required>
+                placeholder="Enter Number" name="number" value="<%= contacts.number %>"  required>
               </div>
               <div class="form-group">
                 <label for="emailTextField">Email</label>
                 <input type="text" class="form-control" id="emailTextField"
-                placeholder="Game Rating" name="rating" value="<%= contacts.rating %>"  required>
+                placeholder="Enter email" name="email" value="<%= contacts.email %>"  required>
               </div>
-
-              <button type="submit" class="btn btn-primary"><i class="fa fa-check-square-o"></i> Submit</button>
+               <button type="submit" class="btn btn-success"><i class="fa fa-check-square-o"></i> Submit</button>
               <a href="/contacts" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
+              
+              <% if (title=="Contact Details") { %>
+                <a href="/contacts/delete/<%= contacts._id %>" class="btn btn-danger"><i class="fa fa-trash-o"></i> Delete</a>
+               <% } %>
+            
+             
+          
+              
             </form>
         </div>
       </div>
