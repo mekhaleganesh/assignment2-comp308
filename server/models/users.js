@@ -3,6 +3,7 @@ let mongoose = require("mongoose");
 let Schema = mongoose.Schema;
 let passportLocalMongoose = require("passport-local-mongoose");
 
+//Creating a new schema for user
 let UserSchema = new Schema({
   username: {
     type: String,

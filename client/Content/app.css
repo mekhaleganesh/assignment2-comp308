@@ -217,6 +217,9 @@ form{
      -webkit-transform: scale(0.8); 
      -webkit-transition-duration: 0.5s;
  }
+ /*
+* — Login Page —
+*/
 
 .loginPage{
   padding-top: 100px;
@@ -225,6 +228,10 @@ form{
   min-height: 100vh;
 
 }
+ /*
+* — register Page —
+*/
+
 
 .registerPage{
 padding-top: 100px;
@@ -235,12 +242,20 @@ padding-top: 100px;
 min-height: 100vh;
   background-color: #a33b36;
 }
+ /*
+* — Contact Book page —
+*/
+
 .viewPage{
   color: black;  
   padding-top: 50px;
   background-color:#af513e;
   min-height: 100vh;
 }
+ /*
+* — Editing Contact page —
+*/
+
 .contactDetailpage{
   color:black;
   background-color: #18343b;

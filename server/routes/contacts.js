@@ -21,7 +21,7 @@ function requireAuth(req, res, next) {
   next();
 }
 
-router.get('/', requireAuth, (req, res, next) => {
+router.get('/', requireAuth, (req, res, next) => { //Add Authentication 
   // find all contacts in the contacts collection
   contact.find( (err, contacts) => {
     if (err) {
@@ -40,7 +40,7 @@ router.get('/', requireAuth, (req, res, next) => {
 
 
 //  GET the contact Details page in order to add a new contact
-router.get('/add', requireAuth, (req, res, next) => {
+router.get('/add', requireAuth, (req, res, next) => { //Add Authentication 
   res.render('contacts/details', {
     title: "Add a Contact",
     contacts: '',
@@ -49,7 +49,7 @@ router.get('/add', requireAuth, (req, res, next) => {
 });
 
 // POST process the contact Details page and create a new contact - CREATE
-router.post('/add', requireAuth, (req, res, next) => {
+router.post('/add', requireAuth, (req, res, next) => { //Add Authentication 
 
     let newContact = contact({
       "name": req.body.name,
@@ -68,7 +68,7 @@ router.post('/add', requireAuth, (req, res, next) => {
 });
 
 // GET the contact Details page in order to edit a new contact
-router.get('/:id', requireAuth, (req, res, next) => {
+router.get('/:id', requireAuth, (req, res, next) => { //Add Authentication 
 
     try {
       // get a reference to the id from the url
@@ -94,7 +94,7 @@ router.get('/:id', requireAuth, (req, res, next) => {
     }
 
     // POST - process the information passed from the details form and update the document
-router.post('/:id', requireAuth, (req, res, next) => {
+router.post('/:id', requireAuth, (req, res, next) => { //Add Authentication 
   // get a reference to the id from the url
     let id = req.params.id;
 
@@ -117,7 +117,7 @@ router.post('/:id', requireAuth, (req, res, next) => {
 
 });
 
-// GET - process the delete by user id
+ // GET - process the delete by user id  //Add Authentication 
 router.get('/delete/:id', requireAuth, (req, res, next) => {
   // get a reference to the id from the url
     let id = req.params.id;
